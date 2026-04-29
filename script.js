@@ -56,7 +56,6 @@ function cargarDesdeAPI() {
     
       document.querySelector("#tablaUniversidades tbody").innerHTML = filas;
 
-     
       
       $("#tablaUniversidades").DataTable({
         pageLength: 5,
@@ -81,8 +80,6 @@ function cargarDesdeAPI() {
       console.warn("API no disponible o error de CORS.");
     });
 }
-
-
 //  DOM 
 
 const btnCargar = document.getElementById("btnCargar");
