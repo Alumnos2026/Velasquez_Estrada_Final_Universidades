@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidades de Guatemala </title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  <!-- DataTables CSS -->
+  <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="styles.css"/>
+
+</head>
+<body>
+
+       <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-mortarboard-fill me-2"></i>Univeridades GT
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#universidades">Universidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tabla">Tabla</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+
+        <!-- Inicio,  Hero -->
+            <selection id="Inicio" class="py-5 bg-primary text-white text-center">
+                <div class="container">
+                <h1 class="display-4 fw-bold">
+                <i class="bi bi-globe-americas me-2"></i>Universidades de Guatemala
+                </h1>
+                 <p class="lead">Explora las instituciones de educación superior registradas en Guatemala.</p>
+                    <button class="btn btn-light btn-lg mt-3" id="btnCargar">
+                    <i class="bi bi-arrow-down-circle me-2"></i>Cargar Universidades
+                    </button>
+                    <div id="mensajeDinamico" class="mt-3 fw-bold"></div>
+                    </div>
+             </selection>  
+
+                 <!--  Cards -->
+    <section id="universidades" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Destacadas</h2>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-building me-2 text-primary"></i>Universidad de San Carlos</h5>
+                <p class="card-text">La única universidad estatal de Guatemala, fundada en 1676. Ofrece educación superior pública y accesible.</p>
+                <a href="https://www.usac.edu.gt" target="_blank" class="btn btn-primary">Visitar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-award me-2 text-success"></i>Universidad Francisco Marroquín</h5>
+                <p class="card-text">Universidad privada reconocida por su enfoque en libertad, ética y economía de mercado en Centroamérica.</p>
+                <a href="https://www.ufm.edu" target="_blank" class="btn btn-success">Visitar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-graph-up me-2 text-danger"></i>Universidad Galileo</h5>
+                <p class="card-text">Líder en tecnología e innovación en Guatemala, con programas presenciales y en línea de alto nivel.</p>
+                <a href="https://www.galileo.edu" target="_blank" class="btn btn-danger">Visitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- Tabla DataTable -->
+    <section id="tabla" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Todas las Universidades</h2>
+        <div class="table-responsive">
+          <table id="tablaUniversidades" class="table table-striped table-bordered w-100">
+            <thead class="table-dark">
+              <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>País</th>
+                <th>Dominio Web</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+         <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">
+        <i class="bi bi-c-circle me-1"></i>2026 UniversidadesGT — Teniente de Intendencia Meylin Loandy Velasquez Estrada | Datos: Universities API
+      </p>
+    </div>
+  </footer>
+
+
+
+    </main>
+
+
+
+       </header> 
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- DataTables JS -->
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
